@@ -1,29 +1,61 @@
-<!DOCTYPE html>
-
 <html>
-
-	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
+<head>
+		<!-- Libraries -->
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		
-		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
-	</head>
+		<!-- Style -->
+		<link rel="stylesheet" href="/public/css/register.css">
+		<!-- Script -->
+		<script src="/controllers/profileController.client.js"></script>
+</head>
+<body>		
+		 <nav class="navbar navbar-inverse">
+		    <div class="container-fluid">
+			    <div class="navbar-header">				     
+		            <a class="navbar-brand" href="#">Book Trading Club</a>
+			    </div>
+		    	<div class="collapse navbar-collapse" >
+				    <ul class="nav navbar-nav navbar-right">
+				        <li><a href="news">News</a></li>
+				        <li><a href="allbooks">All Books</a></li>
+						<li><a href="mybooks">My Books</a></li>
+				       	<li><a href="trades">Trades</a></li>
+				       	<li><a href="profile">Profile</a></li>
+				       	<li><a href="logout">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-	<body>
 		<div class="container">
-			<div class="github-profile">
-				<img src="/public/img/gh-mark-32px.png" alt="github logo" />
-				<p><span>ID: </span><span id="profile-id" class="profile-value"></span></p>
-				<p><span>Username: </span><span id="profile-username" class="profile-value"></span></p>
-				<p><span>Display Name: </span><span id="display-name" class="profile-value"></span></p>
-				<p><span>Repositories: </span><span id="profile-repos" class="profile-value"></span></p>
-				<a class="menu" href="/">Home</a>
-				<p id="menu-divide">|</p>
-				<a class="menu" href="/logout">Logout</a>
+			<div class="jumbotron ">
+				<div class="row text-center">
+					<h2>Edit Profile</h2>
+					<div id="login-form" action="#" method="" role="form" >
+						<div class="form-group">
+							<input type="text" name="city" id="city" tabindex="1" class="form-control" placeholder="City" value="">
+						</div>
+						<div class="form-group">
+							<input type="text" name="state" id="state" tabindex="2" class="form-control" placeholder="State">
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+						</div>
+						<div class="form-group">
+							<button type="button" id="submit-btn" class="btn btn-default">Submit</button>
+						</div>
+						<div class="form-group">
+							<p id="message-status"></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
-	</body>
-
+</body>
 </html>

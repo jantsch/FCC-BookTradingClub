@@ -1,0 +1,40 @@
+.thumbnail{
+	float: left;
+	margin-right: 45px;
+}
+.jumbotron{
+padding-top: 50px;
+	padding-bottom: 100px !important;
+}
+
+#title{
+	margin-bottom: 25px;
+
+}
+p{
+	font-size: 15px !important;
+}
+.first-book{
+	float: left;
+	width: 50%;
+
+
+}
+.sec-book{
+
+	float: right;
+	width: 50%;
+
+}
+.img-first{
+
+}
+.first-details{
+	float: right;
+}
+.details-sec{
+	float:left;
+}
+.sec-img{
+	float: right;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: #333;
+    color: black;
+}
+#search-input{
+	margin-top: 35px;
+	margin-bottom: 35px; 
+}
+.jumbotron{
+        padding-top: 5px;
+    padding-bottom: 20px;
+}
+.thumbnail ,.col-md-2{
+	padding: 0px;
+	
+}
+.thumbnail{
+	border: 2px solid #ddd;
+	margin-bottom: 2px;
+    width: 12em;
+}
+.thumbnail img {
+    height:198px !important;
+    width:100%;
+}
+.btn-refresh {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:40px;
+    height:30px;
+}
+
+
+

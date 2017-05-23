@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+    color: black;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.jumbotron{
+	border-radius: 0px !important;
+}
+.container-fluid{
+	margin: 0px;
+	padding: 0px;
+}
+#features-div{
+	margin-left: 50px;
+	color: white;
+	
+
+}
+.features-list{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 2px solid white ;
+	border-bottom: 2px solid white;
+}
+.features-list li a{
+	color:white;
+}
